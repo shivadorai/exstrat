@@ -1,0 +1,516 @@
+body {
+  /* padding-top: 70px; */
+  background: #fff;
+  font-family: 'Philosopher', sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+	#myCarousel{
+	display: none;
+	}
+}
+
+/* @media only screen and (min-width: 501px) {
+	.smallScreen{
+	display: none;
+	}
+} */
+
+.smallScreen{
+	background: url('../images/carousel/arabnak-islamic-banking-2.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 30em;
+	max-height: 20em;
+}
+
+/* modern clearfix */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+    line-height:0;
+}
+.cf:after {
+    clear:both;
+}
+
+
+<!-- Nav bar shrink contents -->
+  nav.navbar.shrink {
+	min-height: 15px;
+}
+
+ nav.shrink a {
+	/* padding-top: 5px !important;
+	padding-bottom: 5px !important; */
+	font-size: 1em;
+} 
+
+nav.shrink .navbar-brand {
+	font-size: 1em;
+} 
+
+/* nav.shrink .navbar-toggle {
+	padding: 4px 5px;
+	margin: 8px 15px 8px 0;
+}
+ */
+.logoExpand {
+	display: inline-block !important;
+}
+
+.logoshrink {
+	display: none !important;
+}
+<!-- Nav bar shrink contents ends -->
+
+.content {
+  padding: 20px;
+}
+
+#header {
+  background: #fff;
+  border-bottom: 3px rgba(0, 0, 0, 0.07) solid;
+  z-index: 99;
+}
+
+.shadow{
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
+-webkit-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.14);
+-moz-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.14);
+box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.14);
+  }
+
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 5px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+}
+
+#myCarousel img{
+	width: 100%;
+}
+
+
+.carousel-caption h3,
+.carousel-caption p,
+.carousel .icon-container,
+.carousel-caption button {
+	background-color: rgba(40, 143, 24, 0.5);
+	padding: .5em;
+}
+
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.carousel-caption p:nth-child(2){
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.carousel-caption button {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+
+.welcomediv{
+	padding-top: 8em;
+	padding-bottom: 8em;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+.overviewdiv{
+	padding-top: 8em;
+	padding-bottom: 8em;
+	text-align: center;
+	color: black;
+	background-color: white;
+}
+
+.overviewIcon {
+    color: #008000;
+}
+
+.paddingTop{
+	padding-top: 1.5em;
+}
+
+.justify{
+	text-align: justify;
+}
+
+.center{
+	text-align: center;
+}
+
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+
+
+.rcornersLeaf {
+    border-radius: 10px 100px;
+    background: #3aad28;
+   /*  padding: 20px; */
+    padding-top: 2em;
+    width: 70%;
+    height: 70%;
+}
+
+.rcornersLeafRight {
+    border-radius: 100px 10px;
+    background: #3aad28;
+   /*  padding: 20px; */
+    padding: 1em;
+    width: 70%;
+    height: 70%;
+}
+
+.rcorners {
+    border-radius: 200px;
+    background: #66d856;
+    /* padding: 20px; */
+    padding: 1em;
+    width: 70%;
+    height: 70%;
+}
+
+
+.circularBorder{
+	background-color:#fff;
+    border:1px solid red;    
+    height:200px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:200px;
+}
+
+.borderAnimation{
+	border-radius: 20em 20em 20em 20em;
+	-moz-border-radius: 20em 20em 20em 20em;
+	-webkit-border-radius: 20em 20em 20em 20em;
+	border: 0em solid #000000;
+	background-color: #3aad28;
+}
+
+.Hover{
+	border-radius: 20em 10em 20em 20em;
+	-moz-border-radius: 20em 10em 20em 20em;
+	-webkit-border-radius: 20em 10em 20em 20em;
+	border: 0em solid #000000;
+	background-color: #3aad28;
+}
+
+
+.eXstratData, .exi1, .data1, .data2, .data3, .data4{
+	opacity: 0;
+} 
+
+.overviewIcon{
+	opacity: 0;
+} 
+
+.eXstratData.animated, .exi1.animated, .data1.animated, .data2.animated, .data3.animated, .data4.animated{
+	opacity: 1;
+/* 	-webkit-animation-duration: 0.5s !important;
+  	animation-duration: 0.5s !important;
+  	-webkit-animation-delay: 0.5s !important;
+  	animation-delay: 0.5s !important; */
+}
+
+.overviewIcon.animated{
+	opacity: 1;
+}
+
+.whatwedox p{
+	font-size: large;
+}
+
+.aboutUs {
+	font-size: large;
+}
+
+<!-- Footer Info Start-->
+.full {
+	width: 100%;
+}
+
+.gap {
+	height: 30px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+
+.footer {
+	background: #EDEFF1;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.footer img {
+	max-width: 100%;
+}
+
+.footer h3 {
+	border-bottom: 1px solid #BAC1C8;
+	color: #54697E;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	padding: 40px 0 10px;
+	text-transform: uppercase;
+}
+
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+
+.footer a {
+	color: #78828D
+}
+
+.supportLi h4 {
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: normal;
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+}
+
+.newsletter-box input#appendedInputButton {
+	background: #FFFFFF;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	clear: both;
+	width: 100%;
+}
+
+.newsletter-box .btn {
+	border: medium none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	height: 40px;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+
+.newsletter-box {
+	overflow: hidden;
+}
+
+.bg-gray {
+	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+	box-shadow: 0 1px 0 #B4B3B3;
+}
+
+.social li {
+	background: none repeat scroll 0 0 #008000;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+
+.social li a {
+	color: #EDEFF1;
+}
+
+.social li:hover {
+	border: 2px solid #008000;
+	background: #008000;
+}
+
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1 !important;
+}
+
+.footer-bottom {
+    background: #E3E3E3;
+	/*border-top: 1px solid #DDDDDD; */
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+/* .footer-bottom p.pull-left {
+	padding-top: 6px;
+}
+
+.payments {
+	font-size: 1.5em;
+} */
+
+<!-- Footer Info End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+
+padding-top: 70px;
+
+Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0e87e+0,399a1e+100&0+13,1+100
+background: -moz-linear-gradient(top, rgba(160,232,126,0) 0%, rgba(147,222,114,0) 13%, rgba(57,154,30,1) 100%); FF3.6-15
+background: -webkit-linear-gradient(top, rgba(160,232,126,0) 0%,rgba(147,222,114,0) 13%,rgba(57,154,30,1) 100%); Chrome10-25,Safari5.1-6
+background: linear-gradient(to bottom, rgba(160,232,126,0) 0%,rgba(147,222,114,0) 13%,rgba(57,154,30,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0e87e', endColorstr='#399a1e',GradientType=0 ); IE6-9
+
+}
+
+.transparent{    
+    background-color: rgba(0,0,0,0.15);
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(105, 153, 51, 0.75);
+    background-color: rgba(255, 255, 255, 1);
+}
+change the brand and text color
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255, 255, 255, 1);
+}
+change the link color
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1);
+}
+change the color of active or hovered links
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgba(154, 255, 77, 1);
+}
+
+
+
+
+Removes white gap between slides - chagnge to base color of slide images
+
+.carousel {
+  background:#007aeb;
+}
+
+
+Forces image to be 100% width and not max width of 100%
+
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+
+anchors are inline so you need ot make them block to go full width
+
+.carousel-item a {
+  display: block;
+  width:100%;
+} */
+
+
+

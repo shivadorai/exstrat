@@ -1,0 +1,23 @@
+div {
+    float: left;
+    height: 300px;
+    width: 500px;
+    margin: 50px 0;
+    background: grey;}
+
+.page2 {
+    background: #333;}
+
+.page3 {
+    background: #222;}
+
+.page4 {
+    background: #111;}
+
+#testAnim1{
+	opacity: 0;
+}  
+
+#testAnim1.bounceInRight{
+	opacity: 1;
+} 
